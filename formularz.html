@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kolokwium 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="nav-bar"></div>
+
+<form class="form-row" onsubmit="return false">
+    <div class="form-group col-md-4">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control emailInput" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group col-md-4">
+        <label for="inputTopic">Temat</label>
+        <input type="text" class="form-control topicInput" id="inputTopic" placeholder="Temat">
+    </div>
+    <div class="form-group col-md-4 mt-1">
+        <label for="inputMessage">Wiadomosc</label>
+        <textarea class="form-control messageInput" id="inputMessage" placeholder="Wiadomosc"></textarea>
+    </div>
+    <div class=" col mt-4">
+        <button type="button" class="btn btn-primary send">Wyslij</button>
+        <button type="reset" class="btn btn-danger clear">Wyczyść</button>
+    </div>
+</form>
+
+<div>
+    <p class="counter">
+        Wysłane wiadomości : 0
+    </p>
+</div>
+
+<div class="container result" style="display: none">
+    <table class="table table-bordered table-striped w-auto">
+        <thead>
+        <tr>
+            <th>Wiadomość :</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Email :</th>
+            <td class="email">Twoja wiadomosc emial</td>
+        </tr>
+        <tr>
+            <th scope="row">Temat :</th>
+            <td class="topic">Twoja wiadomosc temat</td>
+        </tr>
+        <tr>
+            <th scope="row">Wiadomość :</th>
+            <td class="message">Twoja wiadomosc</td>
+        </tr>
+        <tr>
+            <th scope="row">Została wysłana!</th>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="formularzScript.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>
