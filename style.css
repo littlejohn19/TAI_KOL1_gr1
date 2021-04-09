@@ -12,3 +12,6 @@ body {
     height: 20px;
     background-color: green;
 }
+.hidden{
+    display: none;
+}
