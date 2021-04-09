@@ -12,3 +12,7 @@ body {
     height: 20px;
     background-color: green;
 }
+a {
+    padding-right: 12px;
+    text-decoration: none;
+}
